@@ -1,17 +1,17 @@
 import { Layout } from "antd";
-import { Header } from "antd/es/layout/layout";
+import { Content } from "antd/es/layout/layout";
 import React from "react";
+import SearchInputComponent from "../components/SearchInput/SearchInputComponent";
+import Header from "../components/Header/Header";
 
 const MainContent : React.FC = () => {
 
     return (
-        <Layout style={{ height: "100vh" }}>
-            <Header style={{
-                background: "#fff",
-                textAlign: "center",
-            }}>
-                <h1>GitHub User Search</h1>
-            </Header>
+        <Layout className="ant-layout-container">
+            <Header />
+            <Content className="main-body-container">
+                <SearchInputComponent />
+            </Content>
         </Layout>
     );
 };

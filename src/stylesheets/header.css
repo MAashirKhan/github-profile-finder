@@ -1,0 +1,37 @@
+.main-header-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 94px 0px rgba(132, 11, 136, 0.09);
+}
+
+.width85 {
+    width: 85%;
+}
+
+.main_header {
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border-radius: 30px;
+}
+
+.main_header .logo_box {
+    height: 50px;
+    width: max-content;
+}
+
+.main_header .logo_box img {
+    height: 50px;
+    width: auto;
+    cursor: pointer;
+    margin-left: 30px;
+}
