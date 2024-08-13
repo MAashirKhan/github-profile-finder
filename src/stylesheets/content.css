@@ -7,9 +7,77 @@
     align-self: center;
 }
 
-.search-input-container {
+.ant-input {
     width: 60%;
     height: 50px;
     border-radius: 40px;
     border: 1px solid purple;
+}
+
+.ant-input::placeholder {
+    font-size: 14px !important;
+    color: black !important;
+}
+
+.ant-input-affix-wrapper {
+    border-radius: 6px;
+    border-color: purple;
+    padding: 0px 11px !important;
+}
+
+.ant-input-affix-wrapper .ant-input {
+    height: 50px !important;
+}
+
+.user-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 30px;
+    border: 2px solid rgb(192, 145, 182)
+}
+
+.user-list-container .user-list {
+    margin-top: 20px;
+    width: 50%;
+}
+
+.avatar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px
+}
+
+.card-container { 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; gap: 10px; 
+}
+
+.card-container .card-content { 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    background: slateblue; 
+    color: white; 
+    text-align: center;
+}
+.location {
+    font-size: 20px;
+    margin-top: 10px;
+}
+.btn-profile {
+    width: 100%;
+    background-color: slateblue;
+    color: white;
+    height: 50px;
+}
+.btn-profile:hover{
+    background-color: rgb(169, 158, 238) !important;
+    color: white !important
 }

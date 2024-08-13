@@ -11,4 +11,5 @@ body {
 
 .ant-layout-container {
     height: 100vh;
+    background-color: rgb(235, 226, 226);
 }

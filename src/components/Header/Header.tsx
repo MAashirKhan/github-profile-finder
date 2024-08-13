@@ -11,6 +11,9 @@ const Header: React.FC = () => {
                                 src={require("../../assets/logo.png")}
                                 alt={"Logo"}
                             />
+                            <div>
+                                <h2>GitHub Profile Finder</h2>
+                            </div>
                         </div>
                     </div>
                 </div>

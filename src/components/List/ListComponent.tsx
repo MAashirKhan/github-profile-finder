@@ -8,14 +8,17 @@ const ListComponent: React.FC<GithubUserListProps> = ({
 }) => {
 
     return (
-        <>
+        <div className="user-list-container">
           <List
+            pagination={{
+                pageSize: 10
+            }}
             itemLayout="horizontal"
             dataSource={users}
-            renderItem={(user) => <ItemComponent key={user.id} user={user}/>}
-            style={{ marginTop: "20px", }}
+            renderItem={(user) => <div style={{ cursor: "pointer"}} ><ItemComponent key={user.id} user={user}/></div>}
+            className="user-list"
             />
-        </>
+        </div>
     );
 };
 

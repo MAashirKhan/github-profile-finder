@@ -24,11 +24,10 @@ const SearchInputComponent: React.FC = () => {
         debouncedSearch(searchTerm);
     };
 
-    console.log("USERS", users);
 
     return (
         <>
-            <Input className="search-input-container" allowClear placeholder="Type to Search Github User..." value={query} onChange={handleSearch} />
+            <Input className="search-input-container" placeholder="Type to Search Github User..." value={query} onChange={handleSearch} />
             {error && <Alert message={error || "ERROR WHILE FETCHING"} type="error" showIcon/>}
             <div style={{
                 marginTop: "20px",
